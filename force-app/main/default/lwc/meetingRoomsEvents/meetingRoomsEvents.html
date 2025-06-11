@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Meeting Rooms">
+
+        <div class="slds-m-around_medium">
+            Via Custom Event
+        </div>
+        <div class="slds-m-around_medium">
+            You have selected room: {selectedMeetingRoom}
+        </div>
+        <div class="slds-m-around_medium">
+            The selected room capacity is: {selectedMeetingRoomCapacity}
+        </div>
+
+        <div class="slds-m-around_medium">
+            <ul>
+                <template for:each={meetingRoomsInfo} for:item="room">
+                    <li key={room.roomName} style="padding: 10px">
+                        <!-- Component with event handler -->
+                        <!-- <c-meeting-room-events 
+                            meeting-room-info={room} 
+                            show-room-info
+                            ontileclick={onTileSelectHandler}>
+                        </c-meeting-room-events> -->
+
+                        <!-- Component without event handler -->
+                        <!-- Handler is added dynamically in constructor in JS file -->
+                        <c-meeting-room-events 
+                            meeting-room-info={room} 
+                            show-room-info>
+                        </c-meeting-room-events>
+                    </li>
+                </template>
+            </ul>
+        </div>
+           
+    </lightning-card>
+</template>

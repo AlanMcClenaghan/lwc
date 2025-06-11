@@ -1,0 +1,18 @@
+/* Use element tags, classes, pseudo  */
+
+p {
+    color: green;
+    font-size: 30px;
+    border: 1px solid red;
+}
+
+
+.hero {
+    color: purple;
+    font-size: 20px;
+}
+
+.hero:hover {
+    color: red;
+    font-size: 50px;
+}

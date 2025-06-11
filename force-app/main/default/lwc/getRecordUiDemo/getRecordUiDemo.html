@@ -1,0 +1,21 @@
+<template>
+    <template if:true={showRecord}>
+        <lightning-card title="getRecordUi demo">
+            <div class="slds-p-around_medium">
+                <template for:each={formFields} for:item="field">
+                    <div key={field.label}>
+                        <p><strong>{field.label}: </strong>{field.value}</p>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:false={showRecord}>
+        <lightning-card title="getRecord Adapter">
+            <div class="slds-p-around_medium">
+                <p><strong>Note: </strong>Check this on an Account record page.</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

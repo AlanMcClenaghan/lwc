@@ -1,0 +1,59 @@
+<template>
+    <lightning-card title="Realtime Currency Exchange Rate" icon-name="standard:currency">
+        <div class="slds-m-around_medium">
+            <lightning-layout multiple-rows="true" vertical-align="end">
+                <lightning-layout-item size="12" small-device-size="2" padding="around-small">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <lightning-combobox 
+                                title="Select Currency" 
+                                label="Base Currency" 
+                                value={fromCurrencyValue}
+                                placeholder="--Select--"
+                                options={options}
+                                onchange={handleFromCurrencyChange}>
+                            </lightning-combobox>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="2" padding="around-small">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <lightning-combobox 
+                                title="Select Currency" 
+                                label="To Currency" 
+                                value={toCurrencyValue}
+                                placeholder="--Select--"
+                                options={options}
+                                onchange={handleToCurrencyChange}>
+                            </lightning-combobox>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="2" padding="around-small">
+                    <lightning-button
+                        title="Currency Conversion"
+                        label="Conversion Rate"
+                        variant="brand"
+                        onclick={handleCurrencyConversion}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <template if:true={displayData}>
+            <div class="slds-p-around_medium">
+                <h1 style="font-size: 20px;">Exchange Rate Information from <strong>{fromCurrencyValue}</strong> to <strong>{toCurrencyValue}</strong></h1>
+                <dl class="slds-list_horizontal slds-wrap">
+                    <dt class="slds-item_label sld-truncate" title="From Currency Name">From Currency Name: </dt>
+                    <dd class="slds-item_detail sld-truncate"><strong>{displayData.From_Currency_Name}</strong></dd>
+                    <dt class="slds-item_label sld-truncate" title="To Currency Name">To Currency Name: </dt>
+                    <dd class="slds-item_detail sld-truncate"><strong>{displayData.To_Currency_Name}</strong> </dd>
+                    <dt class="slds-item_label sld-truncate" title="Last Refreshed">Last Refreshed: </dt>
+                    <dd class="slds-item_detail sld-truncate"><strong>{displayData.Last_Refreshed}</strong> </dd>
+                    <dt class="slds-item_label sld-truncate" title="Exchange Rate">Exchange Rate: </dt>
+                    <dd class="slds-item_detail sld-truncate"><strong>{displayData.Exchange_rate}</strong> </dd>
+                </dl>
+            </div>
+        </template>
+    </lightning-card>
+</template>

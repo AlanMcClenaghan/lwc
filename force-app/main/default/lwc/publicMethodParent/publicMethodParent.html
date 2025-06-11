@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Call Methods On Child Component">
+        <div class="slds-m-around_medium">
+
+            <lightning-input 
+                class="slds-m-bottom_medium" 
+                value={value} 
+                label="Checkbox Value" 
+                onchange={onInputChangeHandler}>
+            </lightning-input>
+
+            <lightning-button 
+                label="Select Checkbox" 
+                onclick={checkboxSelectHandler}>
+            </lightning-button>
+
+            <div class="slds-m-vertical_medium"> I am a DIV in Parent Component</div>
+
+            <c-public-method-child ></c-public-method-child>
+
+        </div>
+    </lightning-card>
+</template>

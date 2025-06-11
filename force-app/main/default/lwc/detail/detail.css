@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+}
+
+div {
+  margin: 5px;
+}
+
+.container{
+  padding: 5px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+.tag {
+  margin: 5px;
+  padding: 5px;
+}

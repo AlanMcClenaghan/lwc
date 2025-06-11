@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Slot Components">
+        <div class="slds-m-around_medium">
+            <c-slot-child>
+                <p class="slds-text-color_success" slot="name">My name is Alan McClenaghan</p>
+                <p class="slds-text-color_error" slot="age">My age is 50</p>
+                <p slot="footer">This footer in visible</p>
+            </c-slot-child>
+            <c-slot-child>
+                <p class="slds-text-color_success" slot="name">My name is Alan McClenaghan</p>
+                <p class="slds-text-color_error" slot="age">My age is 50</p>
+                <!-- <p slot="footer">This footer is not visible</p> -->
+            </c-slot-child>
+        </div>
+    </lightning-card>
+</template>

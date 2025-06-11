@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Conditionals and Iterators">
+        <div class="slds-m-around_medium">
+            <div class="slds-m-vertical_medium">
+                <h2>Example of Conditional Rendering</h2>
+                <lightning-input
+                    class="slds-m-top_medium"
+                    type="checkbox" 
+                    label="Toggle true/false" 
+                    onchange={showDivHandler}>
+                </lightning-input>
+                <template if:true={displayDiv}>
+                    <div class="slds-m-top_medium">I am true</div>
+                </template>
+                <template if:false={displayDiv}>
+                    <div class="slds-m-top_medium">I am false</div>
+                </template>
+            </div>
+
+            <div class="slds-m-vertical_medium">
+                <h2>Example of for:each directive</h2>
+                <template for:each={cityList} for:item="city">
+                    <p key={city}>{city}</p>
+                </template>
+            </div>
+
+            <div class="slds-m-vertical_medium">
+                <h2>Example of iterator directive</h2>
+                <template iterator:it={cityList}>
+                    <p key={it.value}>{it.value}</p>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

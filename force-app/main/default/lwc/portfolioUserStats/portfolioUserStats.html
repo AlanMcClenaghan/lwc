@@ -1,0 +1,68 @@
+<template>
+
+    <lightning-record-view-form
+    record-id={recordId}
+    object-api-name={objectApiName}
+    density="comfy">
+
+        <lightning-layout multiple-rows>
+
+            <lightning-layout-item 
+                size="12" small-device-size="4" medium-device-size="3">
+                <lightning-output-field 
+                    field-name="Badges__c">
+                </lightning-output-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item 
+                size="12" small-device-size="4" medium-device-size="3">
+                <lightning-output-field 
+                    field-name="Points__c">
+                </lightning-output-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item 
+                size="12" small-device-size="4" medium-device-size="3">
+                <lightning-output-field 
+                    field-name="Trails__c">
+                </lightning-output-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+                <img src={trailheadRankImg} alt="trailhead badge"/>
+            </lightning-layout-item>
+
+        </lightning-layout>
+
+    </lightning-record-view-form>
+
+    <!-- <lightning-layout multiple-rows density="comfy">
+
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+           <div>
+                <h3>Badges</h3>
+                <p>{badges}</p>
+           </div>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <div>
+                <h3>Points</h3>
+                <p>{points}</p>
+           </div>
+        </lightning-layout-item>
+        
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <div>
+                <h3>Trails</h3>
+                <p>{trails}</p>
+           </div>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <img src={trailheadRankImg} alt="trailhead badge"/>
+        </lightning-layout-item>
+
+    </lightning-layout> -->
+
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Meeting Rooms">
+        <ul>
+            <template for:each={meetingRoomsInfo} for:item="room">
+                <li key={room.roomName} style="padding: 10px">
+                    <!-- Using Properities -->
+                    <!-- show-room-info property from child changes the boolean property to true -->
+                    <!-- <c-meeting-room 
+                        meeting-room-info={room}
+                        show-room-info>
+                    </c-meeting-room> -->
+                    <!-- Using Slots -->
+                    <!-- show-room-info property from child changes the boolean property to true -->
+                    <c-meeting-room show-room-info>
+                        <lightning-tile label={room.roomName} slot="roomInfo">
+                            <p class="slds-truncate" title={room.roomCapacity}>
+                                Room Capacity: {room.roomCapacity}</p>
+                        </lightning-tile>
+                        <div>Additional markup will go in unnamed slot</div>
+                    </c-meeting-room>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

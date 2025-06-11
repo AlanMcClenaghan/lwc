@@ -1,0 +1,6 @@
+@import 'c/cssLibrary';
+
+.two {
+    width: 80%;
+    background-color: lightgreen;
+}

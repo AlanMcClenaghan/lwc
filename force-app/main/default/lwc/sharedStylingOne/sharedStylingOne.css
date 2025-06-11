@@ -1,0 +1,7 @@
+@import 'c/cssLibrary';
+
+.one {
+    width: 90%;
+    background-color: yellow;
+    color: black;
+}

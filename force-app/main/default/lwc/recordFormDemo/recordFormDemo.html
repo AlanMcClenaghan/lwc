@@ -1,0 +1,59 @@
+<template>
+    <lightning-card title="Create record using lightning-record-form">
+        <div class="slds-var-p-around_medium">
+            <lightning-record-form
+                object-api-name={objectName}
+                fields={fieldList}
+                onsuccess={successHandler}>
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Display record using lightning-record-form">
+        <div class="slds-var-p-around_medium">
+            <lightning-record-form
+            record-id="0014L00000gEAeOQAW"
+            object-api-name={objectName}
+            fields={fieldList}>
+        </lightning-record-form>
+        </div>
+
+    </lightning-card>
+
+    <lightning-card title="Display record in read-only mode">
+        <div class="slds-var-p-around_medium">
+            <lightning-record-form
+                record-id="0014L00000gEAeOQAW"
+                object-api-name={objectName}
+                fields={fieldList}
+                mode="readonly">
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Edit record in edit mode">
+        <div class="slds-var-p-around_medium">
+            <lightning-record-form
+                record-id="0014L00000gEAeOQAW"
+                object-api-name={objectName}
+                fields={fieldList}
+                mode="edit"
+                columns="2">
+            </lightning-record-form>
+        </div>
+
+    </lightning-card>
+
+    <lightning-card title="Edit record with layout">
+        <div class="slds-var-p-around_medium">
+            <lightning-record-form
+                record-id="0014L00000gEAeOQAW"
+                object-api-name={objectName}
+                mode="edit"
+                columns="2"
+                layout-type="Compact"
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+
+</template>

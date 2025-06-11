@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="CSS in Components">
+        <div class="slds-m-around_medium">
+            <h1>This is the Parent Component</h1>
+            <c-css-child>
+                <slot><p>This is slot one</p></slot>
+            </c-css-child>
+            <c-css-child class="blue">
+                <slot><p>This is slot two</p></slot>
+            </c-css-child>
+        </div>
+    </lightning-card>
+</template>

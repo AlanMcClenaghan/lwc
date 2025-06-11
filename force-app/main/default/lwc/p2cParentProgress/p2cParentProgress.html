@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Parent to Child – Actions">
+
+        <!-- Example of Data Passing on Action -->
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                type="number" 
+                label="Enter Percentage"
+                onkeyup={changeHandler}
+                >
+            </lightning-input>
+            <c-p2c-progress-component 
+                progress-value={percentage}
+                card-heading="Data Passing on an Action">
+            </c-p2c-progress-component>
+        </div>
+    </lightning-card>
+</template>

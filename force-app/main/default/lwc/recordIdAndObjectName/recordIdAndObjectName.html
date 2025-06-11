@@ -1,0 +1,19 @@
+<template>
+    <template if:true={showRecord}>
+        <lightning-card title="RecordId and Object Name Demo">
+                <div class="slds-m-around_medium">
+                    <p><strong>Record Id is: </strong>{recordId}</p>
+                </div>
+                <div class="slds-m-around_medium">
+                    <p><strong>Object Name is: </strong>{objectApiName}</p>
+                </div>
+        </lightning-card>
+    </template>
+   <template if:false={showRecord}>
+        <lightning-card title="RecordId and Object Name Demo">
+            <div class="slds-p-around_medium">
+                <p><strong>Note: </strong>Check this on an Account record page.</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

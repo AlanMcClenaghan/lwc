@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="getNavItems Demo (Beta)">
+        <div class="slds-p-around_medium">
+           <template if:true={result}>
+               <div><strong>developerName - </strong>{result.developerName}</div>
+               <div><strong>objectApiName - </strong>{result.objectApiName}</div>
+               <div><strong>pageReference - </strong>{result.pageReference.type}</div>
+           </template>
+        </div>
+    </lightning-card>
+</template>

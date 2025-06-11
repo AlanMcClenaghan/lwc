@@ -1,0 +1,46 @@
+<template>
+	<lightning-card title="Service Vendors" icon-name="custom:custom14">
+		<div class="slds-card__body_inner">
+            <!-- Start bear list -->
+            <!-- Imperative Apex -->
+			<!-- <template if:true={bears}>  -->
+            <!-- Wired Apex -->
+            <template if:true={accounts.data}>
+                <lightning-input type="search"
+                    onchange={handleSearchTermChange}
+                    variant="label-hidden"
+                    class="slds-var-m-bottom_small"
+                    label="Search"
+                    placeholder="Search for Service Vendors"
+                    value={searchTerm}>
+                </lightning-input>
+				<lightning-layout multiple-rows="true" pull-to-boundary="small">
+                    <!-- Imperative Apex -->
+					<!-- <template for:each={bears} for:item="bear"> -->
+                    <!-- Wired Apex -->
+                    <template for:each={accounts.data} for:item="account">
+						<lightning-layout-item key={account.Id} size="3" class="slds-var-p-around_x-small">
+							<c-service-vendor-tile account={account} onaccountview={handleAccountView}></c-service-vendor-tile>
+						</lightning-layout-item>
+					</template>
+                </lightning-layout>
+                <!-- No Accounts found -->
+                <template if:false={hasResults}>
+                    <div class="slds-align_absolute-center slds-var-m-vertical_small">
+                        We did not find any Service Vendors matching this search...
+                    </div>
+                </template>
+            </template>
+			<!-- End bear list -->
+            <!-- Data failed to load -->
+            <!-- Imperative Apex -->
+			<!-- <template if:true={error}> -->
+            <!-- Wired Apex -->
+            <template if:true={accounts.error}>
+				<div class="slds-text-color_error">
+					An error occurred while loading the Service Vendors
+				</div>
+			</template>
+		</div>
+	</lightning-card>
+</template>

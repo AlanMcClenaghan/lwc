@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Accessing Elements in the Component">
+        <div class="slds-m-around_medium">
+            <h1>Hi, I am a heading!</h1>
+            <template for:each={names} for:item="name">
+                <div class="name" key={name}>
+                    {name}
+                </div>
+            </template>
+            <!-- When you want to add something to the shadowDOM using JavaScript -->
+            <div class="child" lwc:dom="manual"></div>
+            <button onclick={fetchDetailsHandler}>Fetch Details</button>
+        </div>
+    </lightning-card>  
+</template>

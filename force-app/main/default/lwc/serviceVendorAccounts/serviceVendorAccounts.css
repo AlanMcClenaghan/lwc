@@ -1,0 +1,11 @@
+.slds-text-title_caps{
+    color:#fff;
+    background-color:#e06000;
+  }
+  .slds-text-title_caps:hover{
+    color:#000;
+    background-color:#e06000;
+  }
+  /* .myTable table>thead .slds-cell-fixed.slds-has-button-menu, .myTable table>thead .slds-cell-fixed.slds-has-button-menu:hover{
+    background: antiquewhite;
+  } */

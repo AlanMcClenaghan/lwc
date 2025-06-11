@@ -1,0 +1,19 @@
+/* Parent CSS can't reach into the child component */
+h1 {
+    font-size: 30px;
+    color: red;
+}
+
+/* A parent component CSS can style a host element */
+c-css-child {
+    display: block;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* You can style an element in a slot from the parent component only */
+p {
+    font-size: 15px;
+    color: yellow;
+}

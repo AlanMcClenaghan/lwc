@@ -1,0 +1,18 @@
+<template>
+    <template if:true={showRecord}>
+        <lightning-card title="getRecord Adapter">
+            <div class="slds-p-around_medium">
+                <div><strong>Account Name:</strong> {name}</div>
+                <div><strong>Account Owner: </strong> {owner}</div>
+                <div><strong>Account AnnualRevenue: </strong> {AnnualRevenue}</div>
+            </div>
+        </lightning-card>
+    </template>
+    <template if:false={showRecord}>
+        <lightning-card title="getRecord Adapter">
+            <div class="slds-p-around_medium">
+                <p><strong>Note: </strong>Check this on an Account record page.</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

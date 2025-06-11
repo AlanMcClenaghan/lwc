@@ -1,0 +1,10 @@
+/* A Child Component CSS can reach up and style its own host element */
+:host {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+:host(.blue) {
+    background-color: lightblue;
+    color: black;
+}

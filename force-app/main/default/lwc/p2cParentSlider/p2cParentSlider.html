@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Parent to Child - Methods">
+        <!-- Calling a Child Method from a Parent -->
+        <div class="slds-m-around_medium">
+            <lightning-button 
+                variant="brand"
+                label="Reset Slider"
+                onclick={handleClick}>
+            </lightning-button>
+            <c-p2c-slider-component 
+                card-heading="Calling a Child Method">
+            </c-p2c-slider-component>
+        </div>
+    </lightning-card>
+</template>
