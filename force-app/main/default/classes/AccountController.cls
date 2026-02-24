@@ -2,7 +2,7 @@ public with sharing class AccountController {
 
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccountList() {
-        return [SELECT Id, Name, Type, Industry FROM Account LIMIT 5];
+        return [SELECT Id, Name, Type, Industry FROM Account WHERE Type != Null LIMIT 5];
     }
 
     @AuraEnabled(cacheable=true)

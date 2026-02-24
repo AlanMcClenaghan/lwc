@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created by Lightning App Builder</description>
+    <flexiPage>Call_an_External_Web_Service_API</flexiPage>
+    <label>Call an External Web Service API</label>
+    <motif>Custom68: Globe</motif>
+</CustomTab>

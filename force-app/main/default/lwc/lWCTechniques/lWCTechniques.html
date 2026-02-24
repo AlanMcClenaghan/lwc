@@ -1,0 +1,79 @@
+<template>
+    <lightning-card  title="LWC Techniques">
+        <div class="slds-m-around_medium">
+            Plain text
+        </div>
+        <div class="slds-m-around_medium">
+            {one_way_binding}
+        </div>
+        <div class="slds-m-around_medium">
+            {object_binding.value1}
+        </div>
+        <div class="slds-m-around_medium">
+            {object_binding.value2}
+        </div>
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                type="text" 
+                label="Two-Way Data Binding" 
+                onkeyup={twoWayBindingHandler}>
+            </lightning-input>
+            <p>{one_way_binding_text}</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                type="text" 
+                label="Update way using @track" 
+                onkeyup={trackHandler}>
+            </lightning-input>
+            <p>{trackedText.track}</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                type="text" 
+                label="Update way using spread operator" 
+                onkeyup={spreadHandler}>
+            </lightning-input>
+            <p>{spreadText.new_copy}</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <h2>GETTERS</h2>
+            <p>This getter gets the list of users {usersList}</p>
+            <p>This getter gets the first user {firstUser}</p>
+            <p>This getter calculates the sum {sum}</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <h2>CONDITIONAL RENDERING DIRECTIVES</h2>
+            <lightning-button 
+                variant="brand" 
+                label={buttonLabel}
+                title="Show Data" 
+                onclick={handleShowData} 
+                class="slds-m-left_x-small">
+            </lightning-button>
+         
+        <div class="slds-m-around_medium">
+            <template if:true={isVisible}>
+                <p>Click the button to hide this message</p>
+            </template>
+        </div>
+        
+        <div class="slds-m-around_medium">
+            <template if:false={isVisible}>
+                <p>The message has been hidden. Click again to reveal</p>
+            </template>
+        </div>
+
+        <h2>CONDITIONAL RENDERING USING lwc:if, lwc:elseif and lwc:else</h2>
+        <div class="slds-m-around_medium">
+            <template lwc:if={isVisible}>
+                <p>Click the button to hide this message</p>
+            </template>
+            <template lwc:else>
+                <p>The message has been hidden. Click again to reveal</p>
+            </template>
+        </div>
+
+        </div>
+    </lightning-card>
+</template>

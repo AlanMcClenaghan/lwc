@@ -5,6 +5,7 @@ import TITLE_FIELD from '@salesforce/schema/Contact.Title'
 import PHONE_FIELD from '@salesforce/schema/Contact.Phone'
 import EMAIL_FIELD from '@salesforce/schema/Contact.Email';
 import ACCOUNT_FIELD from '@salesforce/schema/Contact.AccountId';
+
 export default class RecordEditForm extends LightningElement {
     objectName = CONTACT_OBJECT
     fields={ 

@@ -23,6 +23,7 @@ export default class RecordEditCustom extends LightningElement {
         inputCmp.reportValidity()
 
     }
+    
     successHandler(event){ 
         const toastEvent = new ShowToastEvent({ 
             title:"Account created",
@@ -30,8 +31,8 @@ export default class RecordEditCustom extends LightningElement {
             variant:"success"
         })
         this.dispatchEvent(toastEvent)
-
     }
+
     handleError(event){ 
         const toastEvent = new ShowToastEvent({ 
             title:"Error creating Account",

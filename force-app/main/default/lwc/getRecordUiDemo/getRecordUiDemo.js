@@ -11,7 +11,7 @@ export default class GetRecordUiDemo extends LightningElement {
     @wire(getRecordUi, {recordIds:'$recordId', layoutTypes:'Full', modes:'Edit'})
     accountRecordUiHandler({data, error}){
         if(data){
-            console.log(data)
+            console.log('Data from getRecordUiDemo' + data)
             this.formFields = this.formFields.map(item=>{
                 return {...item, value:data.records[this.recordId].fields[item.fieldName].value}
             })

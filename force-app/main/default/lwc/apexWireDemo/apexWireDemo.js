@@ -5,7 +5,7 @@ export default class ApexWireDemo extends LightningElement {
     accountList
     
     @wire(getAccountList)
-    accounts
+    accounts // property name
 
     
     @wire(getAccountList)

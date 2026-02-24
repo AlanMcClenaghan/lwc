@@ -30,10 +30,9 @@ export default class PdfGenerationDemo extends LightningElement {
 
     pdfHandler(){
         let content = this.template.querySelector('.container')
-        console.log(content.outerHTML)
         generatePDF({ recordId:this.recordId, htmlData:content.outerHTML}).then(result=>{
             console.log("attachment id", result)
-            window.open(`https://alanmcclenaghan5-dev-ed--c.documentforce.com/servlet/servlet.FileDownload?file=${result.Id}`)
+            window.open(`/servlet/servlet.FileDownload?file=${result.Id}`, '_blank')
         }).catch(error=>{
             console.error(error)
         })

@@ -3,7 +3,12 @@
 
         <img src={userPic} class="profile-pic"/>
         <div class="name">{fullName}</div>
-        <div class="designation">{designation} at {companyName}</div>
+        <div class="designation">
+            {designation}
+            <template if:true={companyName}>
+                &nbsp;at {companyName}
+            </template>
+        </div>
         <div class="location">{companyLocation}</div>
 
         <div>

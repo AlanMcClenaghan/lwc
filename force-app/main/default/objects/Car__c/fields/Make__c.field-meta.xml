@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Make__c</fullName>
     <label>Make</label>
-    <required>true</required>
+    <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -10,6 +10,16 @@
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
+            <value>
+                <fullName>Audi</fullName>
+                <default>false</default>
+                <label>Audi</label>
+            </value>
+            <value>
+                <fullName>BMW</fullName>
+                <default>false</default>
+                <label>BMW</label>
+            </value>
             <value>
                 <fullName>Ford</fullName>
                 <default>false</default>
@@ -26,9 +36,44 @@
                 <label>Hyundai</label>
             </value>
             <value>
+                <fullName>Jaguar</fullName>
+                <default>false</default>
+                <label>Jaguar</label>
+            </value>
+            <value>
+                <fullName>Landrover</fullName>
+                <default>false</default>
+                <label>Landrover</label>
+            </value>
+            <value>
+                <fullName>Maruti</fullName>
+                <default>false</default>
+                <label>Maruti</label>
+            </value>
+            <value>
+                <fullName>Mercedes Benz</fullName>
+                <default>false</default>
+                <label>Mercedes Benz</label>
+            </value>
+            <value>
                 <fullName>Renault</fullName>
                 <default>false</default>
                 <label>Renault</label>
+            </value>
+            <value>
+                <fullName>Suzuki</fullName>
+                <default>false</default>
+                <label>Suzuki</label>
+            </value>
+            <value>
+                <fullName>Tata</fullName>
+                <default>false</default>
+                <label>Tata</label>
+            </value>
+            <value>
+                <fullName>Toyota</fullName>
+                <default>false</default>
+                <label>Toyota</label>
             </value>
         </valueSetDefinition>
     </valueSet>

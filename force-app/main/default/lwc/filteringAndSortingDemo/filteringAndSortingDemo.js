@@ -14,7 +14,7 @@ export default class FilteringAndSortingDemo extends LightningElement {
         if(data){
             console.log(data)
             this.fullTableData = data
-            this.filteredData= [...this.sortBy(data)]
+            this.filteredData = [...this.sortBy(data)]
         }
         if(error){
             console.log(error)
@@ -30,6 +30,7 @@ export default class FilteringAndSortingDemo extends LightningElement {
             {label:'Email', value:'Email'}
         ]
     }
+    
     get sortByOptions(){
         return [
             {label:"Id", value:'Id'},
@@ -63,11 +64,9 @@ export default class FilteringAndSortingDemo extends LightningElement {
                     }
                 })
             }, 500)
-            
         } else {
             this.filteredData = [...this.fullTableData]
         }
-        
     }
 
     /****sorting logic */

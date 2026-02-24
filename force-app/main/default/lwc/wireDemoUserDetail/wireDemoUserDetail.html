@@ -2,6 +2,7 @@
     <lightning-card title="User detail using wire as function">
         <div class="slds-var-p-around_medium">
             <template if:true={userDetail}>
+                <p>This is the preferred method as it is easier to debug:</p>
                 <div><strong>Email:</strong> {userDetail.Email.value}</div>
                 <div><strong>Name:</strong> {userDetail.Name.value}</div>
             </template>

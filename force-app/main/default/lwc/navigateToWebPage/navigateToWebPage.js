@@ -5,7 +5,7 @@ export default class NavigateToWebPage extends NavigationMixin(LightningElement)
         this[NavigationMixin.Navigate]({ 
             type:"standard__webPage",
             attributes:{ 
-                url:"http://www.alanmcclenaghan.com"
+                url:"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/"
             }
         })
     }
