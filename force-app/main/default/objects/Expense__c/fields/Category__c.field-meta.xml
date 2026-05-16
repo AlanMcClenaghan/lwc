@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Medical &amp; Healthcare</fullName>
+                <default>false</default>
+                <label>Medical &amp; Healthcare</label>
+            </value>
+            <value>
+                <fullName>Saving, Investing, &amp; Debt Payments</fullName>
+                <default>false</default>
+                <label>Saving, Investing, &amp; Debt Payments</label>
+            </value>
+            <value>
+                <fullName>Personal Spending</fullName>
+                <default>false</default>
+                <label>Personal Spending</label>
+            </value>
+            <value>
+                <fullName>Recreation &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Recreation &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

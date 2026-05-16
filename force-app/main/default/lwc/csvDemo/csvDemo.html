@@ -3,7 +3,7 @@
         <div class="slds-p-horizontal_medium">
             <template if:true={accountData}>
                 <template for:each={accountData} for:item="account">
-                    <p key={account.Id}>{account.Name}</p>
+                    <p key={account.Id}>{account.Name} - {account.Industry}</p>
                 </template>
             </template>
         </div>

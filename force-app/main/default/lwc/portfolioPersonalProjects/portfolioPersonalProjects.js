@@ -10,7 +10,12 @@ export default class PortfolioPersonalProjects extends LightningElement {
     CurrencyCalculator = `${PortfolioAssets}/PortfolioAssets/Projects/CurrencyCalculator.png`
     WeatherApp = `${PortfolioAssets}/PortfolioAssets/Projects/WeatherApp.png`
     SurveyApp = `${PortfolioAssets}/PortfolioAssets/Projects/Survey.png`
+    IPLDashboard = `${PortfolioAssets}/PortfolioAssets/Projects/IPLDashboard.png`
     NoteApp = `${PortfolioAssets}/PortfolioAssets/Projects/NoteTakingApp.png`
+    HondaApp = `${PortfolioAssets}/PortfolioAssets/Projects/HondaApp.png`
+    InvitationApp = `${PortfolioAssets}/PortfolioAssets/Projects/InvitationApp.png`
+    ExpenseManager = `${PortfolioAssets}/PortfolioAssets/Projects/ExpenseManager.png`
+    AIChef = `${PortfolioAssets}/PortfolioAssets/Projects/AIChef.png`
 
     projects = [
         {
@@ -34,7 +39,7 @@ export default class PortfolioPersonalProjects extends LightningElement {
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/alarm-clock"
         },
         {
-            "name":"Curreny Converter App",
+            "name":"Currency Converter App",
             "img":this.CurrencyCalculator,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/currency-converter"
         },
@@ -52,7 +57,31 @@ export default class PortfolioPersonalProjects extends LightningElement {
             "name":"Note Taking App",
             "img":this.NoteApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/note-taking-app"
+        },
+        {
+            "name":"IPL Dashboard",
+            "img":this.IPLDashboard,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.lightning.force.com/lightning/n/IPL_Dashboard"
+        },
+        {
+            "name":"Honda App",
+            "img":this.HondaApp,
+            "link":"https://delicate-semolina-80c2a5.netlify.app/"
+        },
+        {
+            "name":"Invitation App",
+            "img":this.InvitationApp,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/invitation/?invitationid=a0CJ500000Vl2Xt"
+        } ,
+        {
+            "name":"Expense Manager App",
+            "img":this.ExpenseManager,
+            "link":"https://expense-manager-lwc-jw0r.onrender.com/"
+        },
+        {
+            "name":"AI Chef App",
+            "img":this.AIChef,
+            "link":"https://orgfarm-2c4c59b56e-dev-ed.develop.my.site.com/AIChef"
         }
     ]
-
 }
