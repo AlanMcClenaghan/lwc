@@ -19,9 +19,24 @@ export default class PortfolioPersonalProjects extends LightningElement {
 
     projects = [
         {
-            "name":"Memory Game",
-            "img":this.MemoryGame,
-            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/memory-game"
+            "name":"AI Chef App",
+            "img":this.AIChef,
+            "link":"https://orgfarm-2c4c59b56e-dev-ed.develop.my.site.com/AIChef"
+        },
+        {
+            "name":"IPL Dashboard",
+            "img":this.IPLDashboard,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/ipl/"
+        },
+        {
+            "name":"Honda App",
+            "img":this.HondaApp,
+            "link":"https://delicate-semolina-80c2a5.netlify.app/"
+        },
+        {
+            "name":"Weather App",
+            "img":this.WeatherApp,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/weather-app"
         },
         {
             "name":"Book Listing App",
@@ -29,24 +44,9 @@ export default class PortfolioPersonalProjects extends LightningElement {
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/book-listing-app"
         },
         {
-            "name":"BMI Calculator App",
-            "img":this.BMICalculator,
-            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/bmi-calculator"
-        },
-        {
-            "name":"Alarm Clock App",
-            "img":this.AlarmClock,
-            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/alarm-clock"
-        },
-        {
             "name":"Currency Converter App",
             "img":this.CurrencyCalculator,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/currency-converter"
-        },
-        {
-            "name":"Weather App",
-            "img":this.WeatherApp,
-            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/weather-app"
         },
         {
             "name":"Survey App",
@@ -59,29 +59,30 @@ export default class PortfolioPersonalProjects extends LightningElement {
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/note-taking-app"
         },
         {
-            "name":"IPL Dashboard",
-            "img":this.IPLDashboard,
-            "link":"https://alanmcclenaghan-portfolio-dev-ed.lightning.force.com/lightning/n/IPL_Dashboard"
-        },
-        {
-            "name":"Honda App",
-            "img":this.HondaApp,
-            "link":"https://delicate-semolina-80c2a5.netlify.app/"
-        },
-        {
             "name":"Invitation App",
             "img":this.InvitationApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/invitation/?invitationid=a0CJ500000Vl2Xt"
         } ,
         {
-            "name":"Expense Manager App",
-            "img":this.ExpenseManager,
-            "link":"https://expense-manager-lwc-jw0r.onrender.com/"
+            "name":"Memory Game",
+            "img":this.MemoryGame,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/memory-game"
         },
         {
-            "name":"AI Chef App",
-            "img":this.AIChef,
-            "link":"https://orgfarm-2c4c59b56e-dev-ed.develop.my.site.com/AIChef"
+            "name":"Alarm Clock App",
+            "img":this.AlarmClock,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/alarm-clock"
+        },
+        {
+            "name":"BMI Calculator App",
+            "img":this.BMICalculator,
+            "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/bmi-calculator"
         }
+        // ,
+        // {
+        //     "name":"Expense Manager App",
+        //     "img":this.ExpenseManager,
+        //     "link":"https://expense-manager-lwc-jw0r.onrender.com/"
+        // }
     ]
 }

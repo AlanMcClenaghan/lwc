@@ -18,6 +18,10 @@ export default class IplAllTimeLeaders extends LightningElement {
     fileName='onAllTimeLeaders.json' 
     allLeaders=[]
 
+    connectedCallback(){
+        console.log("fileName =", this.fileName)
+    }
+
     @wire(MessageContext)
     messageContext
 
@@ -37,9 +41,15 @@ export default class IplAllTimeLeaders extends LightningElement {
                     label
                 }
             })
-            const {title, KPIType} = this.allLeaders[0]
+            console.log("leaders", this.allLeaders)
 
-            this.publishMessage(KPIType, title)
+            if(this.allLeaders?.length){
+                const {title, KPIType} = this.allLeaders[0]
+
+                console.log("Publishing", KPIType, title)
+
+                this.publishMessage(KPIType, title)
+            }
         }
         if(error){
             console.error("onAllTimeLeadersHandler error", error)

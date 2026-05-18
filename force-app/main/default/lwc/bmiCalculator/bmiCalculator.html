@@ -1,32 +1,90 @@
+<!-- sldsValidatorIgnore -->
 <template>
-    <lightning-card title={cardTitle}>
-        <div class="slds-m-around_medium">
-            <lightning-input
-                type="number" 
-                step="0.01" 
-                label="Weight in Kilogram" 
-                onchange={onWeightChange}>
-            </lightning-input>
-            <lightning-input
-                class="slds-m-vertical_medium"
-                type="number" 
-                step="0.01" 
-                label="Height in Metres" 
-                onchange={onHeightChange}>
-            </lightning-input>
-            <lightning-button
-                label="Get BMI" 
-                onclick={calculateBMI}>
-            </lightning-button>
-            <div class="slds-m-top_medium">
-                <p>Using a Private Property</p>
-                <p>Your BMI is: {bmiData.bmi}</p>
+    <div class="app slds-var-p-around_medium">
+        <div class="box">
+            <h1>BMI Calculator</h1>
+
+            <template if:true={result}>
+                <section>
+                    <h2>Your BMI value is:</h2>
+                    <div 
+                        class="result-value">
+                        {bmiValue}
+                    </div>
+                    <h2>So you are:</h2>
+                    <div 
+                        class="result-value">
+                        {result}
+                    </div>
+                    <button 
+                        class="slds-button slds-button_neutral slds-button_stretch custom-button slds-var-m-bottom_large slds-var-m-top_large" 
+                        onclick={recalculate}>
+                        Re-Calculate
+                    </button>
+                </section>
+            </template>
+
+            <template if:false={result}>
+                <form onsubmit={submitHandler}>
+                    <div class="slds-form-element slds-var-m-bottom_medium">
+                        <label
+                            class="slds-form-element__label slds-text-title_bold"
+                            for="text-input-height">
+                            Height (cm)
+                        </label>
+                        <div 
+                            class="slds-form-element__control">
+                            <input 
+                                type="number" 
+                                id="text-input-height" 
+                                min="0" 
+                                placeholder="Enter your height in cm"
+                                name="height"
+                                value="height"
+                                onchange={inputHandler}
+                                required class="slds-input"
+                            /> 
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-var-m-bottom_medium">
+                        <label
+                            class="slds-form-element__label slds-text-title_bold"
+                            for="text-input-weight">
+                            Weight (kg)
+                        </label>
+                        <div class="slds-form-element__control">
+                            <input 
+                                type="number" 
+                                id="text-input-weight" 
+                                min="0"  
+                                placeholder="Enter your weight in kg"
+                                name="weight"
+                                value="weight"
+                                onchange={inputHandler}
+                                required class="slds-input"
+                            />
+                        </div>
+                    </div>
+                        <button 
+                            class="slds-button slds-button_neutral slds-button_stretch custom-button slds-var-m-bottom_large">
+                            Calculate
+                        </button>
+                </form>
+            </template>
+
+            <div class="info-wrapper">
+                <h2>What your BMI means</h2>
+                <p class="slds-var-m-bottom_medium">Once you have measured your BMI, you can determine your healthy weight range. If your BMI is:</p>
+                <h3 class="slds-text-color_error slds-text-heading_medium">Under 18.5</h3>
+                <p class="slds-var-m-bottom_medium">You are very underweight and possibly malnourished.</p>
+                <h3 class="slds-text-color_success slds-text-heading_medium">Between 18.5 to 24.9</h3>
+                <p class="slds-var-m-bottom_medium">You have a healthy weight range for young and middle-aged adults.</p>
+                <h3 class="slds-text-color_error slds-text-heading_medium">25.0 to 29.9</h3>
+                <p class="slds-var-m-bottom_medium">You are overweight.</p>
+                <h3 class="slds-text-color_error slds-text-heading_medium">Over 30</h3>
+                <p class="slds-var-m-bottom_medium">You are Obese.</p>
             </div>
-            <!-- Using a Getter Property -->
-            <div class="slds-m-top_medium">
-                <p>Using a Getter Property</p>
-                <p>{bmiValue}</p>
-            </div>
+
         </div>
-    </lightning-card>
+    </div>
 </template>
