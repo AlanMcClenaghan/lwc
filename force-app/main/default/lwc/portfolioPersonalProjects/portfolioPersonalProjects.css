@@ -15,7 +15,18 @@
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 18px;
+}
+
+.project-name{
+    color:white;
+    font-size:18px;
+    font-weight:600;
+}
+
+.project-stack{
+    color:#bdbdbd;
+    font-size:14px;
+    margin-top:4px;
 }
   
 .card .bottom:hover {

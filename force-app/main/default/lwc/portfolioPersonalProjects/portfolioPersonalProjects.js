@@ -19,68 +19,81 @@ export default class PortfolioPersonalProjects extends LightningElement {
 
     projects = [
         {
-            "name":"AI Chef App",
+            "name":"AI Chef",
+            "stack":"Prompt Builder + AI",
             "img":this.AIChef,
             "link":"https://orgfarm-2c4c59b56e-dev-ed.develop.my.site.com/AIChef"
         },
         {
             "name":"IPL Dashboard",
+            "stack":"LWC + Apex",
             "img":this.IPLDashboard,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/ipl/"
         },
         {
             "name":"Honda App",
+            "stack":"LWC OSS + LWR",
             "img":this.HondaApp,
             "link":"https://delicate-semolina-80c2a5.netlify.app/"
         },
         {
             "name":"Weather App",
+            "stack":"API Integration",
             "img":this.WeatherApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/weather-app"
         },
         {
             "name":"Book Listing App",
+            "stack":"API Integration",
             "img":this.BookListingApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/book-listing-app"
         },
         {
-            "name":"Currency Converter App",
+            "name":"Currency Converter",
+            "stack":"API Integration",
             "img":this.CurrencyCalculator,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/currency-converter"
         },
         {
             "name":"Survey App",
+            "stack":"Objects + LWC",
             "img":this.SurveyApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/survey/survey/runtimeApp.app?invitationId=0Ki4L000000gO5r&surveyName=employee_survey&UUID=929fabfe-1efa-4d54-b858-32018785480e"
         },
         {
             "name":"Note Taking App",
+            "stack":"Objects + LWC",
             "img":this.NoteApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/note-taking-app"
         },
         {
             "name":"Invitation App",
+            "stack":"Objects + LWC",
             "img":this.InvitationApp,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/invitation/?invitationid=a0CJ500000Vl2Xt"
         } ,
         {
             "name":"Memory Game",
+            "stack":"LWC + JavaScript",
             "img":this.MemoryGame,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/memory-game"
         },
         {
-            "name":"Alarm Clock App",
+            "name":"Alarm Clock",
+            "stack":"LWC + JavaScript",
             "img":this.AlarmClock,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/alarm-clock"
         },
         {
-            "name":"BMI Calculator App",
+            "name":"BMI Calculator",
+            "stack":"LWC + JavaScript",
             "img":this.BMICalculator,
             "link":"https://alanmcclenaghan-portfolio-dev-ed.my.site.com/Portfolio/bmi-calculator"
         }
         // ,
         // {
         //     "name":"Expense Manager App",
+        //     "stack":"Objects + LWC",
         //     "img":this.ExpenseManager,
         //     "link":"https://expense-manager-lwc-jw0r.onrender.com/"
         // }
